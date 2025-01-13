@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FrameworkGridView: View {
     let columns: [GridItem] = [GridItem.init(.flexible()),
                                GridItem.init(.flexible()),
                                GridItem.init(.flexible())]
@@ -27,7 +27,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    FrameworkGridView()
 }
 
 
