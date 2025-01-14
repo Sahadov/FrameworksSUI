@@ -14,19 +14,8 @@ struct FrameworkDetailView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Spacer()
-                Button{
-                    isShowingDetailView = false
-                } label: {
-                    Image(systemName: "xmark")
-                        .foregroundColor(Color(.label)) // black or white depending on the mode
-                        .imageScale(.large)
-                        .frame(width: 44, height: 44) // standart size for a touch target
-                        .padding()
-                }
-            }
-    
+            AFDismissButton(isShowingDetailView: $isShowingDetailView)
+
             Spacer()
             
             FrameworkView(framework: framework)
